@@ -101,16 +101,13 @@ else:
         st.balloons()
 
         # Exibir as respostas corretas e incorretas
-        st.write(f"Você acertou {acertos} questões.")
-        st.write(f"Você errou {erros} questões.")
+        st.write(f"Você **acertou** - {acertos} questões .")
+        st.write(f"Errou - {erros} questões.")
         st.write(f"Sua nota final é: {nota}/10")
 
-        # Exibir as respostas do usuário para revisão
-        for i in range(1, 11):
-            st.write(f'{i}. {"Certo" if respostas[str(i)] == gabarito[str(i)] else "Errado"}')
-
+      
         # Mensagem final
         st.write(f"Obrigado por fazer o quiz do **Diarius Apps**! Você acertou o total de {acertos} questões.")
 
-st.link_button("Central de Login", "https://dic-ffe3f7051fcd.herokuapp.com/lista")
+st.link_button("Central de Links", "https://dic-ffe3f7051fcd.herokuapp.com/lista")
 
